@@ -1,7 +1,7 @@
 {
-  "name": "dew-md-mini",
+  "name": "chathuwa-x-md",
   "version": "1.0.0",
-  "description": "dew-md-mini WhatsApp Bot with Multi-Number Support",
+  "description": "chathuwa-x-md mini WhatsApp Bot with Multi-Number Support",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
