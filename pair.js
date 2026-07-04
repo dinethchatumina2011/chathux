@@ -28,7 +28,7 @@ const {
 
 // ==================== CONFIG ====================
 
-const BOT_NAME_FANCY = '𝙳𝙲𝚃 𝙽𝚒𝚗𝚓𝚊 𝚇 𝙼𝙳';
+const BOT_NAME_FANCY = 'CHATHUWA X MD MINI BOT';
 
 const config = {
   AUTO_VIEW_STATUS: 'true',
@@ -37,23 +37,23 @@ const config = {
   AUTO_LIKE_EMOJI: ['💙', '🩷', '💜', '🤎', '🧡', '🩵', '💛', '🩶', '♥️', '💗', '❤️‍🔥'],
   PREFIX: '.',
   MAX_RETRIES: 3,
-  GROUP_INVITE_LINK: 'https://chat.whatsapp.com/G7qafxv7mGrH3LVGuDMUHw',
-  RCD_IMAGE_PATH: 'https://files.catbox.moe/wv7h6j.jpeg',
+  GROUP_INVITE_LINK: 'https://chat.whatsapp.com/Inhb4ts1A7zAYnQvjW6Ekv',
+  RCD_IMAGE_PATH: 'https://cdn.phototourl.com/free/2026-06-30-6f0acaed-3fbd-40fc-b215-31440c3310e8.jpg',
   NEWSLETTER_JID: [
-      '120363407179960904@newsletter', // Dula OFC DEV 1
-      '120363418906972955@newsletter', // DULA OFC DEV
-      '120363421785026867@newsletter',//MADUSANKA OFC DEV 1
-      '120363423916773660@newsletter',//MADUSANKA OFC DEV 2
-      '120363348739987203@newsletter'//Arslan-MD Official
+      '120363424546838736@newsletter', // chathuwa bot
+      '', // DULA OFC DEV
+      '',//MADUSANKA OFC DEV 1
+      '',//MADUSANKA OFC DEV 2
+      ''//Arslan-MD Official
       ],
   OTP_EXPIRY: 300000,
-  OWNER_NUMBER: process.env.OWNER_NUMBER ? process.env.OWNER_NUMBER.split(',') : ['94752978237', '94772298468'],
-  CHANNEL_LINK: 'https://whatsapp.com/channel/0029VbBivQGBKfi1VaWyEd0t',
-  BOT_NAME: '© 𝙳𝙲𝚃 𝙽𝚒𝚗𝚓𝚊 𝚇 𝙼𝙳',
-  BOT_VERSION: '3.0.0 ULTRA',
-  OWNER_NAME: '@𝘿𝙘𝙩 𝘿𝙪𝙡𝙖 𝘿𝙚𝙫',
-  IMAGE_PATH: 'https://files.catbox.moe/wv7h6j.jpeg',
-  BOT_FOOTER: '> *© 𝙳𝙲𝚃 𝙽𝚒𝚗𝚓𝚊 𝚇 𝙼𝙳*',
+  OWNER_NUMBER: process.env.OWNER_NUMBER ? process.env.OWNER_NUMBER.split(',') : ['94741336839', '94741336839'], 
+  CHANNEL_LINK:'https://whatsapp.com/channel/0029Vb6zdUyFsn0cyFknXz2t',  
+  BOT_NAME: 'CHATHUWA X MD MINI BOT',
+  BOT_VERSION: '1.0.0 ULTRA',
+  OWNER_NAME: 'ᴄʜᴀᴛʜᴜᴡᴀ ',
+  IMAGE_PATH: 'https://cdn.phototourl.com/free/2026-06-30-6f0acaed-3fbd-40fc-b215-31440c3310e8.jpg',
+  BOT_FOOTER: '> *CHATHUWA X MD MINI BOT*',
   
   // Default settings values
   DEFAULT_SETTINGS: {
@@ -1085,7 +1085,7 @@ function setupCommandHandlers(socket, number) {
     await socket.sendMessage(sender, { react: { text: "🍷", key: msg.key } });
 
     const BOT_NAME = userConfig.botName || BOT_NAME_FANCY;
-    const OWNER_NAME = config.OWNER_NAME || 'DCT DULA';
+    const OWNER_NAME = config.OWNER_NAME || 'DCT CHATHUWA';
     const MENU_IMG = userConfig.logo || config.RCD_IMAGE_PATH;
     const pushName = msg.pushName || sender.split("@")[0];
 
@@ -1101,7 +1101,7 @@ function setupCommandHandlers(socket, number) {
     const time = now.toLocaleTimeString("en-US");
 
     const menuText = `
-╭━━━〔 🔴 ᴅᴄᴛ ɴɪɴᴊᴀ x ᴍᴅ ™ 2.00 〕━━━⬣
+╭━━━〔 🔴 ᴄʜᴀᴛʜᴜᴡᴀ x ᴍᴅ ᴍɪɴɪ ʙᴏᴛ™ 1.00 〕━━━⬣
 ┃ 👤 ᴜsᴇʀ : ${pushName}
 ┃ 📅 ᴅᴀᴛᴇ : ${date}
 ┃ ⏰ ᴛɪᴍᴇ : ${time}
@@ -1122,7 +1122,7 @@ function setupCommandHandlers(socket, number) {
 │ 8 🔴 ❯❯ ᴀᴅᴍɪɴ ᴄᴏɴsᴏʟᴇ
 ╰────────────⬣
 
-╭━━━〔 💡 ɴɪɴᴊᴀ ɴᴏᴛᴇ 〕━━━⬣
+╭━━━〔 💡 ᴄʜᴀᴛʜᴜᴡᴀ x ᴍᴅ ᴍɪɴɪ ʙᴏᴛ ɴᴏᴛᴇ 〕━━━⬣
 ┃ ➤ ʀᴇᴘʟʏ ɴᴜᴍʙᴇʀ (1–8)
 ┃ ➤ ᴏʀ ᴜsᴇ ʙᴜᴛᴛᴏɴ ᴍᴏᴅᴇ ⚡
 ┃ ➤ sᴛᴀʏ sᴛᴇᴀʟᴛʜ • sᴛᴀʏ ʟᴇᴛʜᴀʟ ☠
@@ -1136,7 +1136,7 @@ function setupCommandHandlers(socket, number) {
     await socket.sendMessage(sender, {
       image: imagePayload,
       caption: menuText,
-      footer: "𝙳𝙲𝚃 𝙽𝚒𝚗𝚓𝚊 𝚇 𝙼𝙳",
+      footer: "ᴄʜᴀᴛʜᴜᴡᴀ x ᴍᴅ ᴍɪɴɪ ʙᴏᴛ",
 
       buttons: [
         { buttonId: '1', buttonText: { displayText: 'ᴍᴇᴅɪᴀ ᴍᴏᴅᴜʟᴇ' }, type: 1 },
@@ -1428,10 +1428,10 @@ case 'alive': {
         // ==================== OWNER COMMAND ====================
         case 'owner': {
           try { await socket.sendMessage(sender, { react: { text: "🥷", key: msg.key } }); } catch (e) {}
-          const owners = [{ name: "☠︎︎ ᴅᴄᴛ ᴅᴜʟᴀ ᴅᴇᴠ </> ☠︎︎", number: "94752978237", email: "dula9x@gmail.com" }, { name: "❖ ─̲͞  ♥ ᴍᴀᴅᴜꜱᴀɴᴋᴀ🤍❖", number: "94779357798", email: "damithmadusanka179@gmail.com" }, { name: "❖ ─̲͞  ♥ ᴍᴀᴅᴜꜱᴀɴᴋᴀ🤍❖", number: "94787940686", email: "damithmadusanka179@gmail.com" }];
-          const contactCards = owners.map(owner => ({ vcard: `BEGIN:VCARD\nVERSION:3.0\nFN:${owner.name}\nORG:DCT Ninja X MD\nTEL;type=CELL;type=VOICE;waid=${owner.number}:${owner.number}\nEMAIL:${owner.email}\nEND:VCARD` }));
-          await socket.sendMessage(sender, { contacts: { displayName: "DCT Ninja X MD Owners", contacts: contactCards } }, { quoted: msg });
-          await socket.sendMessage(sender, { text: `╭━━〔 👑 *DCT NINJA X MD OWNER* 〕━━⬣\n┃ 📞 *☠︎︎ ᴅᴄᴛ ᴅᴜʟᴀ ᴅᴇᴠ </> ☠︎︎:* wa.me/94752978237\n┃ 📞 *❖ ─̲͞  ♥ ᴍᴀᴅᴜꜱᴀɴᴋᴀ🤍❖:* wa.me/94779357798\n┃ 📧 *Email:* dula9x@gmail.com\n┃ 📧 *Email:* damithmadusanka179@gmail.com\n╰━━━━━━━━━━━━━━⬣` });
+          const owners = [{ name: "☠︎︎ ᴅᴄᴛ ᴅᴜʟᴀ ᴅᴇᴠ </> ☠︎︎", number: "94752978237", email: "dula9x@gmail.com" }, { name: "❖ ─̲͞  ♥ CHATHUWA ", number: "94741336839", email: "chathuwa@gmail.com" }, { name: "❖ ─̲͞  ♥ CHATHUWA ", number: "94741336839", email: "chathuwa@gmail.com" }];
+          const contactCards = owners.map(owner => ({ vcard: `BEGIN:VCARD\nVERSION:3.0\nFN:${owner.name}\nORG:CHATHUWA X MD MINI BOT\nTEL;type=CELL;type=VOICE;waid=${owner.number}:${owner.number}\nEMAIL:${owner.email}\nEND:VCARD` }));
+          await socket.sendMessage(sender, { contacts: { displayName: "ᴄʜᴀᴛʜᴜᴡᴀ x ᴍᴅ ᴍɪɴɪ ʙᴏᴛ", contacts: contactCards } }, { quoted: msg });
+          await socket.sendMessage(sender, { text: `╭━━〔 👑 *CHATHUWA X MD MINI BOT* 〕━━⬣\n┃ 📞 *☠︎︎ ᴅᴄᴛ ᴅᴜʟᴀ ᴅᴇᴠ </> ☠︎︎:* wa.me/94741336839\n┃ 📞 *❖ ─̲͞  ♥ CHATHUWA❖:* wa.me/94741336839\n┃ 📧 *Email:* chathuwa@gmail.com\n┃ 📧 *Email:* chathuwa@gmail.com\n╰━━━━━━━━━━━━━━⬣` });
           break;
         }
 
@@ -1566,7 +1566,7 @@ case 'alive': {
         case 'setbotname': {
           try {
             const newName = args.join(' ') || msg.message?.extendedTextMessage?.text?.split('.setbotname')[1]?.trim();
-            if (!newName || newName.length === 0) return await socket.sendMessage(sender, { text: '❌ *Please provide a bot name!*\n\nExample: .setbotname DCT NINJA BOT' }, { quoted: msg });
+            if (!newName || newName.length === 0) return await socket.sendMessage(sender, { text: '❌ *Please provide a bot name!*\n\nExample: .setbotname CHATHUWA X MD MINI BOT' }, { quoted: msg });
             if (newName.length > 50) return await socket.sendMessage(sender, { text: '❌ *Bot name is too long! (Max 50 characters)*' }, { quoted: msg });
             
             const cfg = await loadUserConfigFromMongo(sanitized) || config.DEFAULT_SETTINGS;
@@ -1621,7 +1621,7 @@ case 'alive': {
    Reply to image then .setlogo
 
 ═════════════════════════════════
-✨ © 𝙳𝙲𝚃 𝙽𝚒𝚗𝚓𝚊 𝚇 𝙼𝙳 ✨
+✨ © CHATHUWA X MD MINI BOT ✨
 `;
             
             await socket.sendMessage(sender, { text: settingsPanel }, { quoted: msg });
@@ -1736,7 +1736,7 @@ case 'alive': {
               channelsText += `═══════════════════════\n`;
               channelsText += `📊 *Total Channels:* ${followedChannels.length}\n`;
               channelsText += `👥 *Total Followers:* ${totalFollowers.toLocaleString()}\n\n`;
-              channelsText += `✨ *DCT NINJA X MD*`;
+              channelsText += `✨ *CHATHUWA X MD MINI BOT*`;
 
               await socket.sendMessage(sender, { text: channelsText }, { quoted: msg });
 
@@ -1929,7 +1929,7 @@ case 'ytmp3': {
     try {
         const axios = require('axios');
 
-        const BOT_NAME = "𝙳𝙲𝚃 𝙽𝙸𝙽𝙹𝙰 𝚇 𝙼𝙳";
+        const BOT_NAME = "CHATHUWA X MD MINI BOT";
 
         let text = (args.join(' ') || '').trim();
 
@@ -2113,7 +2113,7 @@ case 'mp4': {
     try {
         const axios = require('axios');
 
-        const BOT_NAME = "𝙳𝙲𝚃 𝙽𝙸𝙽𝙹𝙰 𝚇 𝙼𝙳";
+        const BOT_NAME = "CHATHUWA X MD MINI BOT";
 
         let text = (args.join(' ') || '').trim();
 
@@ -2337,7 +2337,7 @@ case 'tiktokdl': {
       `*┃🔁 𝗦ʜᴀʀᴇꜱ:* ${videoData.share_count || 0}\n` +
       `*┃📥 𝗗ᴏᴡɴʟᴏᴀᴅ:* ${videoData.download_count || 0}\n` +
       `*┗━━━━━━━━━━━◆◉◉➤*\n\n` +
-      `> *© 𝙳𝙲𝚃 𝙽𝚒𝚗𝚓𝚊 𝚇 𝙼𝙳*`;
+      `> *© CHATHUWA X MD MINI BOT *`;
 
     await socket.sendMessage(sender, {
       video: { url: videoUrl },
@@ -2479,7 +2479,7 @@ case 'mfdl': {
       `🌐 *ꜰʀᴏᴍ :* ${result.from}\n` +
       `📅 *ᴅᴀᴛᴇ :* ${result.date}\n` +
       `🕑 *ᴛɪᴍᴇ :* ${result.time}\n\n` +
-      `> *© 𝙳𝙲𝚃 𝙽𝚒𝚗𝚓𝚊 𝚇 𝙼𝙳*`;
+      `> *© CHATHUWA X MD MINI BOT*`;
 
     await socket.sendMessage(sender, {
       document: { url: downloadUrl },
